@@ -1,0 +1,57 @@
+$header-height: 70px;
+$bg-color: #044157;
+$text-color: #fff;
+$btn-bg-color: #82c900;
+$app-width: 70%;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    height: $header-height;
+    font-size: 25px;
+    background: $bg-color;
+    color: $text-color;
+}
+
+header section {
+    margin: 0 auto;
+    width: $app-width;
+    height: 100%;
+    line-height: $header-height;
+}
+
+.btn {
+    background: #ccc;
+    height: 30px;
+    color: #333;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    margin: 10px 0;
+    display: block;
+
+    &-success {
+        color: #fff;
+        background: $btn-bg-color;
+    }
+} 
+
+.content {
+    margin: 20px auto;
+    position: relative;
+    padding: 20px;
+    width: $app-width;
+}
+
+input[name=fileToRead] {
+    display: none;
+}
