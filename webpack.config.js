@@ -8,7 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js'
     },
-    mode: 'development',
+    mode: 'production',
     devtool: 'inline-source-map',
     module: {
         rules: [
