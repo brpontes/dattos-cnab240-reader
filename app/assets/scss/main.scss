@@ -1,7 +1,8 @@
 $header-height: 70px;
 $bg-color: #044157;
 $text-color: #fff;
-$btn-bg-color: #82c900;
+$btn-success-bg: #82c900;
+$btn-danger-bg: #e03226;
 $app-width: 70%;
 
 * {
@@ -38,12 +39,23 @@ header section {
     outline: none;
     margin: 10px 0;
     display: block;
+    transition: 0.2s all ease;
 
     &-success {
         color: #fff;
-        background: $btn-bg-color;
+        background: $btn-success-bg;
+    }
+
+    &-danger {
+        color: #fff;
+        background: $btn-danger-bg;
     }
 } 
+
+.error {
+    color: $btn-danger-bg;
+    font-size: 15px;
+}
 
 .content {
     margin: 20px auto;
@@ -54,4 +66,16 @@ header section {
 
 input[name=fileToRead] {
     display: none;
+}
+
+#record-view {
+    background: $bg-color;
+    color: #fff;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    padding: 10px;
+
+    p {
+        margin: 10px 0;
+    }
 }
