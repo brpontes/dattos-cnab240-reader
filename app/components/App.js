@@ -2,6 +2,8 @@ import React from 'react'
 import Reader from '../api/Reader'
 import RecordView from './RecordView'
 
+import '../assets/scss/main.scss'
+
 export default class App extends React.Component {
     
     constructor(props) {
@@ -36,7 +38,7 @@ export default class App extends React.Component {
                 records: result.records
             }) )
         })
-        .catch( err => console.log(err) )
+        .catch( err => info.insertAdjacentHTML('beforeend', `<span class="error">${err}</span>`) )
     }
 
     render() {
