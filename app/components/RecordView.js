@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default class RecordView extends React.Component {
 
@@ -22,4 +23,12 @@ export default class RecordView extends React.Component {
             </section>
         )
     }
+}
+
+RecordView.propTypes = {
+    records: PropTypes.array
+}
+ 
+RecordView.defaultProps = {
+    records: []
 }
