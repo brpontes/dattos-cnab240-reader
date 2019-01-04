@@ -1,4 +1,5 @@
 const path = require('path')
+const UglifyWebpackPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
     entry: {
@@ -9,7 +10,7 @@ module.exports = {
         filename: '[name].bundle.js'
     },
     mode: 'production',
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     module: {
         rules: [
             {
@@ -21,5 +22,8 @@ module.exports = {
                 use: ['style-loader', 'css-loader', 'sass-loader']
             }
         ]
-    }
+    },
+    plugins: [
+        new UglifyWebpackPlugin()
+    ]
 }

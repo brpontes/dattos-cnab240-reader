@@ -16,6 +16,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack": "^4.28.2"
   },
   "devDependencies": {
@@ -35,6 +36,7 @@
     "nodemon": "^1.18.9",
     "prop-types": "^15.6.2",
     "sass-loader": "^7.1.0",
+    "source-map": "^0.7.3",
     "webpack-cli": "^3.1.2"
   }
 }
