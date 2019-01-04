@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node index.js",
-    "build:dev": "node_modules/.bin/webpack --watch --colors --progress",
-    "build": "npm install && webpack --colors --progress && gulp sass"
+    "start": "node index.js",
+    "build:dev": "webpack --watch --colors --progress",
+    "build": "webpack --colors --progress"
   },
   "author": "",
   "license": "ISC",
