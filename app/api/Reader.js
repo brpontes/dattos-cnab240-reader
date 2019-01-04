@@ -1,10 +1,6 @@
-import CNAB240 from './CNAB240'
+import { getHeader, getRecords } from './CNAB240'
 
 export default class Reader {
-
-    constructor() {
-        this.CNAB240 = new CNAB240()
-    }
 
     init(file) {
         return new Promise((resolve, reject) => {
@@ -16,8 +12,8 @@ export default class Reader {
 
     getCNAB240data(data) {
         const content = data.split('\n')
-        const header = this.CNAB240.getHeader(content)
-        const records = this.CNAB240.getRecords(content)
+        const header = getHeader(content)
+        const records = getRecords(content)
 
         return { header, records }
     }
