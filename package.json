@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "test": "jest",
     "build:dev": "webpack --watch --colors --progress",
     "build": "webpack --colors --progress"
   },
@@ -20,12 +21,17 @@
     "webpack": "^4.28.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
+    "@babel/core": "^7.2.2",
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
+    "jest": "^23.6.0",
+    "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
+    "regenerator-runtime": "^0.13.1",
     "sass-loader": "^7.1.0",
     "source-map": "^0.7.3",
     "webpack-cli": "^3.1.2"

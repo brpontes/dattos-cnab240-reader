@@ -7,15 +7,10 @@ This app will read CNAB240 pattern files and show you a report based its content
 
 Just install NodeJS and webpack to run this app.
 
-### How to install
-
-```sh
-$ git clone https://github.com/brunodev18/dattos-cnab240-reader.git
-```
-
 ### Run the app
 
 ```sh
+$ git clone https://github.com/brunodev18/dattos-cnab240-reader.git
 $ cd dattos-cnab240-reader
 $ npm install && npm run build
 $ npm start

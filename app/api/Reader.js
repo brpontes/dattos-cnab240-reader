@@ -21,7 +21,7 @@ export default class Reader {
     readFile(file) {
         return new Promise((resolve, reject) => {
             const reader = new FileReader()
-
+            
             reader.onload = () => {
                 const { result } = reader
                 const data = this.getCNAB240data(result.toString())
